@@ -34,11 +34,12 @@ func (g *_gorm) Config(prefix string, singular bool) *gorm.Config {
 		general = global.GVA_CONFIG.Mysql.GeneralDB
 	}
 	return &gorm.Config{
-		Logger: logger.New(NewWriter(general, log.New(os.Stdout, "\r\n", log.LstdFlags)), logger.Config{
-			SlowThreshold: 200 * time.Millisecond,
-			LogLevel:      general.LogLevel(),
-			Colorful:      true,
-		}),
+		Logger: logger.New(NewWriter(general, log.New(os.Stdout, "\r\n", log.LstdFlags)),
+			logger.Config{
+				SlowThreshold: 200 * time.Millisecond,
+				LogLevel:      general.LogLevel(),
+				Colorful:      true,
+			}),
 		NamingStrategy: schema.NamingStrategy{
 			TablePrefix:   prefix,
 			SingularTable: singular,
