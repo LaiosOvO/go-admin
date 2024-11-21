@@ -21,6 +21,7 @@ import (
 // @in                          header
 // @name                        x-token
 // @BasePath                    /
+
 func main() {
 	global.GVA_VP = core.Viper() // 初始化Viper
 	//fmt.Println(global.GVA_VP)
