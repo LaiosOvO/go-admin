@@ -7,3 +7,7 @@ var TestInstance = new(TestInstanceDef)
 type TestInstanceDef struct {
 	Api gorm.TestApi
 }
+
+type RouterGroup struct {
+	TestRouter
+}

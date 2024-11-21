@@ -55,8 +55,8 @@ db-list:
     config: ""
     db-name: "gva"
     username: "root"
-    password: "123456"
-    path: "localhost"
+    password: "laios"
+    path: "127.0.0.1"
     engine: ""
     log-mode: "info"
     max-idle-conns: 10
@@ -125,7 +125,7 @@ mysql:
     config: charset=utf8mb4&parseTime=True&loc=Local
     db-name: gva
     username: root
-    password: mysql123.
+    password: "laios"
     path: 127.0.0.1
     engine: ""
     log-mode: info
@@ -170,14 +170,14 @@ qiniu:
     use-https: false
     use-cdn-domains: false
 redis:
-    addr: 127.0.0.1:6379
+    addr: 127.0.0.1:16379
     password: ""
     db: 0
     useCluster: false
-    clusterAddrs:
-        - 172.21.0.3:7000
-        - 172.21.0.4:7001
-        - 172.21.0.2:7002
+#    clusterAddrs:
+#        - 172.21.0.3:7000
+#        - 172.21.0.4:7001
+#        - 172.21.0.2:7002
 sqlite:
     prefix: ""
     port: ""

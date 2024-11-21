@@ -5,7 +5,6 @@ import (
 	"github.com/flipped-aurora/gin-vue-admin/server/core"
 	"github.com/flipped-aurora/gin-vue-admin/server/global"
 	"github.com/flipped-aurora/gin-vue-admin/server/initialize"
-	test1 "github.com/flipped-aurora/gin-vue-admin/server/test"
 	_ "go.uber.org/automaxprocs"
 )
 
@@ -38,9 +37,9 @@ func main() {
 	//	db, _ := global.GVA_DB.DB()
 	//	defer db.Close()
 	//}
-	fmt.Println("invoke 的 db")
-	fmt.Println(test1.TestInstance)
-	test1.TestInstance.Api.GetExaCustomerList()
+	//fmt.Println("invoke 的 db")
+	//fmt.Println(test1.TestInstance)
+	//test1.TestInstance.Api.GetExaCustomerList()
 	//fmt.Println()
 	core.RunWindowsServer()
 }
