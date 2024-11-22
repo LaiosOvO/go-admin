@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"github.com/flipped-aurora/gin-vue-admin/server/model/common/response"
 	"github.com/flipped-aurora/gin-vue-admin/server/test/ws/chatroom/core/service"
+	"github.com/flipped-aurora/gin-vue-admin/server/test/ws/chatroom/example/gofly/ws"
 	"github.com/gin-gonic/gin"
 )
 
@@ -24,6 +25,11 @@ func (e *TestRouter) InitTestRouter(Router *gin.RouterGroup) {
 	customerRouterWithoutRecord := Router.Group("ws")
 	{
 		customerRouterWithoutRecord.GET("chat", service.Chat) // 私聊例子
+		//
+		customerRouterWithoutRecord.GET("ws_kefu", ws.NewKefuServer)      // 私聊例子
+		customerRouterWithoutRecord.GET("ws_visitor", ws.NewVistorServer) // 私聊例子
+
+		//customerRouterWithoutRecord.GET("chat", service.Chat) // 私聊例子
 		//customerRouterWithoutRecord.GET("customerList", testHandler) // 获取客户列表
 	}
 

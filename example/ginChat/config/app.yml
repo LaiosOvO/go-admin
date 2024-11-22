@@ -1,0 +1,14 @@
+mysql:
+  dns: "123123"
+
+redis:
+  addr: "localhost:16379"
+  password: ""
+  DB: 6
+  poolSize: 30
+  minIdleConn: 30
+
+
+port:
+  server: ":8082"
+  udp: 3001
