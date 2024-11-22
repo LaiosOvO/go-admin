@@ -145,9 +145,9 @@ func WebServerBackend() {
 			to := data1["to"].(string)
 
 			if isKefu != nil && isKefu == "yes" {
-				visitorId := data1["from_id"].(string)
-				kefuInfo := models.FindVisitorByVistorId(visitorId)
-				VisitorMessage(visitorId, data1["content"].(string), kefuInfo)
+				//visitorId := data1["from_id"].(string)
+				//kefuInfo := models.FindVisitorByVistorId(visitorId)
+				//VisitorMessage(visitorId, data1["content"].(string), kefuInfo)
 			} else {
 				OneKefuMessage(to, data.content)
 

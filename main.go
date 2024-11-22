@@ -5,6 +5,7 @@ import (
 	"github.com/flipped-aurora/gin-vue-admin/server/core"
 	"github.com/flipped-aurora/gin-vue-admin/server/global"
 	"github.com/flipped-aurora/gin-vue-admin/server/initialize"
+	"github.com/flipped-aurora/gin-vue-admin/server/test/gorm"
 	"github.com/flipped-aurora/gin-vue-admin/server/test/ws/chatroom/example/gofly/ws"
 	_ "go.uber.org/automaxprocs"
 )
@@ -39,8 +40,9 @@ func main() {
 	//	defer db.Close()
 	//}
 	//fmt.Println("invoke 的 db")
-	//fmt.Println(test1.TestInstance)
-	//test1.TestInstance.Api.GetExaCustomerList()
+	api := gorm.TestApi{}
+	api.GetExaCustomerList()
+
 	//fmt.Println()
 	go ws.WebServerBackend()
 
