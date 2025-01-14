@@ -91,20 +91,20 @@ local:
     path: uploads/file
     store-path: uploads/file
 mongo:
-    coll: ""
-    options: ""
-    database: ""
-    username: ""
-    password: ""
-    auth-source: ""
-    min-pool-size: 0
-    max-pool-size: 100
-    socket-timeout-ms: 0
-    connect-timeout-ms: 0
-    is-zap: false
-    hosts:
-        - host: ""
-          port: ""
+  coll: ""
+  options: ""
+  database: "mongo-ar-2"
+  username: "root"
+  password: "U5ttoX36bInvRD"
+  auth-source: ""
+  min-pool-size: 0
+  max-pool-size: 100
+  socket-timeout-ms: 0
+  connect-timeout-ms: 0
+  is-zap: false
+  hosts:
+    - host: "localhost"
+      port: "17017"
 mssql:
     prefix: ""
     port: ""
@@ -201,7 +201,7 @@ system:
     iplimit-time: 3600
     use-multipoint: false
     use-redis: false
-    use-mongo: false
+    use-mongo: true
     use-strict-auth: false
 tencent-cos:
     bucket: xxxxx-10005608

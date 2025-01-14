@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"github.com/flipped-aurora/gin-vue-admin/server/global"
 	"github.com/flipped-aurora/gin-vue-admin/server/initialize"
+	"go.uber.org/zap"
 )
 
 type server interface {
@@ -15,12 +16,13 @@ func RunWindowsServer() {
 	//	// 初始化redis服务
 	//	initialize.Redis()
 	//}
-	//if global.GVA_CONFIG.System.UseMongo {
-	//	err := initialize.Mongo.Initialization()
-	//	if err != nil {
-	//		zap.L().Error(fmt.Sprintf("%+v", err))
-	//	}
-	//}
+	if global.GVA_CONFIG.System.UseMongo {
+		err := initialize.Mongo.Initialization()
+		if err != nil {
+			fmt.Println("mongo 初始化出错")
+			zap.L().Error(fmt.Sprintf("%+v", err))
+		}
+	}
 	//// 从db加载jwt数据
 	//if global.GVA_DB != nil {
 	//	system.LoadAll()
