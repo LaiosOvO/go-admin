@@ -15,9 +15,9 @@ func Gorm() *gorm.DB {
 	case "mysql":
 		global.GVA_ACTIVE_DBNAME = &global.GVA_CONFIG.Mysql.Dbname
 		return GormMysql()
-	//case "pgsql":
-	//	global.GVA_ACTIVE_DBNAME = &global.GVA_CONFIG.Pgsql.Dbname
-	//	return GormPgSql()
+	case "pgsql":
+		global.GVA_ACTIVE_DBNAME = &global.GVA_CONFIG.Pgsql.Dbname
+		return GormPgSql()
 	//case "oracle":
 	//	global.GVA_ACTIVE_DBNAME = &global.GVA_CONFIG.Oracle.Dbname
 	//	return GormOracle()

@@ -148,19 +148,19 @@ oracle:
     singular: false
     log-zap: false
 pgsql:
-    prefix: ""
-    port: ""
-    config: ""
-    db-name: ""
-    username: ""
-    password: ""
-    path: ""
-    engine: ""
-    log-mode: ""
-    max-idle-conns: 10
-    max-open-conns: 100
-    singular: false
-    log-zap: false
+  prefix: ""
+  port: "5432"
+  config: "stringtype=unspecified"
+  db-name: "gva"
+  username: "postgres"
+  password: "123456"
+  path: "127.0.0.1"
+  engine: ""
+  log-mode: ""
+  max-idle-conns: 10
+  max-open-conns: 100
+  singular: false
+  log-zap: false
 qiniu:
     zone: ZoneHuaDong
     bucket: ""
@@ -193,7 +193,7 @@ sqlite:
     singular: false
     log-zap: false
 system:
-    db-type: mysql
+    db-type: pgsql
     oss-type: local
     router-prefix: ""
     addr: 8888
