@@ -35,8 +35,8 @@ func Gorm() *gorm.DB {
 
 func RegisterTables() {
 	db := global.GVA_DB
+	global.GVA_LOG.Log(1, "开始迁移数据")
 	err := db.AutoMigrate(
-
 		//system.SysApi{},
 		//system.SysIgnoreApi{},
 		system.SysUser{},
