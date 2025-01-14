@@ -1,0 +1,19 @@
+[github.com/laios]2025-01-14 18:05:06.413	[34minfo[0m	D:/workspace/lan/golang/go-admin/initialize/gorm.go:38	开始表迁移
+[github.com/laios]2025-01-14 18:05:06.661	[34minfo[0m	D:/workspace/lan/golang/go-admin/initialize/gorm.go:75	register table success
+[github.com/laios]2025-01-14 18:06:00.926	[34minfo[0m	D:/workspace/lan/golang/go-admin/initialize/gorm.go:75	register table success
+[github.com/laios]2025-01-14 18:07:41.809	[34minfo[0m	D:/workspace/lan/golang/go-admin/initialize/gorm.go:75	register table success
+[github.com/laios]2025-01-14 18:08:21.597	[34minfo[0m	D:/workspace/lan/golang/go-admin/initialize/gorm.go:75	register table success
+[github.com/laios]2025-01-14 18:08:21.760	[34minfo[0m	D:/workspace/lan/golang/go-admin/initialize/gorm.go:75	register table success
+[github.com/laios]2025-01-14 18:11:24.221	[34minfo[0m	D:/workspace/lan/golang/go-admin/initialize/gorm.go:75	register table success
+[github.com/laios]2025-01-14 18:11:24.365	[34minfo[0m	D:/workspace/lan/golang/go-admin/initialize/gorm.go:75	register table success
+[github.com/laios]2025-01-14 18:13:18.741	[34minfo[0m	D:/workspace/lan/golang/go-admin/initialize/gorm.go:74	register table success
+[github.com/laios]2025-01-14 18:13:18.896	[34minfo[0m	D:/workspace/lan/golang/go-admin/initialize/gorm.go:74	register table success
+[github.com/laios]2025-01-14 18:20:59.975	[34minfo[0m	D:/workspace/lan/golang/go-admin/initialize/gorm.go:74	register table success
+[github.com/laios]2025-01-14 18:21:00.213	[34minfo[0m	D:/workspace/lan/golang/go-admin/initialize/gorm.go:74	register table success
+[github.com/laios]2025-01-14 18:21:00.231	[34minfo[0m	D:/workspace/lan/golang/go-admin/initialize/redis.go:35	redis connect ping response:	{"name": "", "pong": "PONG"}
+[github.com/laios]2025-01-14 18:22:04.097	[34minfo[0m	D:/workspace/lan/golang/go-admin/initialize/gorm.go:74	register table success
+[github.com/laios]2025-01-14 18:22:04.425	[34minfo[0m	D:/workspace/lan/golang/go-admin/initialize/gorm.go:74	register table success
+[github.com/laios]2025-01-14 18:22:04.442	[34minfo[0m	D:/workspace/lan/golang/go-admin/initialize/redis.go:35	redis connect ping response:	{"name": "", "pong": "PONG"}
+[github.com/laios]2025-01-14 18:22:29.055	[34minfo[0m	D:/workspace/lan/golang/go-admin/initialize/gorm.go:74	register table success
+[github.com/laios]2025-01-14 18:22:29.327	[34minfo[0m	D:/workspace/lan/golang/go-admin/initialize/gorm.go:74	register table success
+[github.com/laios]2025-01-14 18:22:35.314	[34minfo[0m	D:/workspace/lan/golang/go-admin/initialize/redis.go:35	redis connect ping response:	{"name": "", "pong": "PONG"}
