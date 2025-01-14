@@ -24,13 +24,13 @@
 	}
 ```
 
-
-
 #### integrate gin
 
 
 
 #### integrate gorm
+
+
 
 
 #### integrate db-list
@@ -80,9 +80,11 @@ func GormPgSql() *gorm.DB {
 }
 ```
 
-#### 整合mongodb
 
-直接通过 qmgo 来获取一个数据库的实例
+#### 整合mongodb
+- 配置类
+- 直接通过 qmgo 来获取一个数据库的实例
+
 ```go
 func (m *mongo) Initialization() error {
 	var opts []options.ClientOptions

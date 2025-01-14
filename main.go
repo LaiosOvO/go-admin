@@ -26,7 +26,7 @@ func main() {
 	//fmt.Println(global.GVA_VP)
 	fmt.Println(global.GVA_CONFIG)
 	//initialize.OtherInit()
-	//global.GVA_LOG = core.Zap() // 初始化zap日志库
+	global.GVA_LOG = core.Zap() // 初始化zap日志库
 	//zap.ReplaceGlobals(global.GVA_LOG)
 	global.GVA_DB = initialize.Gorm() // gorm连接数据库
 	//initialize.Timer()
@@ -40,7 +40,7 @@ func main() {
 	//fmt.Println("invoke 的 db")
 	//api := gorm.TestApi{}
 	//api.GetExaCustomerList()
-
+	global.GVA_LOG.Log(1, "测试日志功能")
 	//fmt.Println()
 
 	core.RunWindowsServer()
