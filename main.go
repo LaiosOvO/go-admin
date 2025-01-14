@@ -6,7 +6,6 @@ import (
 	"github.com/flipped-aurora/gin-vue-admin/server/global"
 	"github.com/flipped-aurora/gin-vue-admin/server/initialize"
 	"github.com/flipped-aurora/gin-vue-admin/server/test/gorm"
-	"github.com/flipped-aurora/gin-vue-admin/server/test/ws/chatroom/example/gofly/ws"
 	_ "go.uber.org/automaxprocs"
 )
 
@@ -44,7 +43,6 @@ func main() {
 	api.GetExaCustomerList()
 
 	//fmt.Println()
-	go ws.WebServerBackend()
 
 	core.RunWindowsServer()
 }

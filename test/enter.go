@@ -9,5 +9,4 @@ type TestInstanceDef struct {
 }
 
 type RouterGroup struct {
-	TestRouter
 }

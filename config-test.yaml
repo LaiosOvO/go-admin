@@ -55,7 +55,7 @@ db-list:
     config: ""
     db-name: "gva"
     username: "root"
-    password: "123456"
+    password: "laios"
     path: "127.0.0.1"
     engine: ""
     log-mode: "info"
@@ -125,7 +125,7 @@ mysql:
     config: charset=utf8mb4&parseTime=True&loc=Local
     db-name: gva
     username: root
-    password: "123456"
+    password: "laios"
     path: 127.0.0.1
     engine: ""
     log-mode: info
